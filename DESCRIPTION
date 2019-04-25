@@ -1,0 +1,31 @@
+Package: suRge
+Title: An extension of `dfoliatR` to analyze growth surges
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Chris",
+           family = "Guiterman",
+           role = c("aut", "cre"),
+           email = "chguiterman@email.arizona.edu")
+Description: This package ammends `dfoliatR` functions to accomodate 
+    analyses in which the host response to insect attack could be a 
+    growth *surge* rather than a departure.
+Depends: R (>= 3.5)
+Suggests:
+    testthat,
+    knitr,
+    rmarkdown 
+Imports:
+    dplR,
+    dplyr,
+    rlang,
+    MASS,
+    stats,
+    ggplot2,
+    ggpubr,
+    reshape2,
+    plyr
+Remotes: chguiterman/dfoliatR
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
