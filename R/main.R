@@ -49,7 +49,7 @@ defoliate_trees <- function(host_tree, nonhost_chron, duration_years = 8,
   tree_list <- lapply(seq_len(nseries), function(i){
     input_series <- stats::na.omit(dplR::combine.rwl(host_tree[, i, drop=FALSE],
                                                      nonhost_chron))
-    corrected_series <- gsi(input_series)
+    corrected_series <- dfoliatR::gsi(input_series)
     defoliated_series <- suRge::id_defoliation(corrected_series,
                                         duration_years = duration_years,
                                         bridge_events = bridge_events,
